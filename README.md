@@ -146,6 +146,9 @@ EDA revealed several behavioral patterns associated with purchasing decisions.
   - 84.53% → No purchase  
   - 15.47% → Purchase
 
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/purchase%20distribution.png)
+
+
 - Most numerical features are **right-skewed**, with many sessions having very low activity.
 
 - Several features contained outliers, especially:
