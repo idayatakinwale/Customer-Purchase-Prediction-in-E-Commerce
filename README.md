@@ -70,6 +70,8 @@ https://www.kaggle.com/datasets/imakash3011/online-shoppers-purchasing-intention
 
 The dataset contains **12,330 user sessions and 18 behavioral features** describing browsing activity, session attributes, and visitor characteristics.
 
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/capstone%20dataset.png)
+
 ---
 
 # Key Features
