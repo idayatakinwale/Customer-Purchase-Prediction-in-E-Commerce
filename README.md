@@ -140,6 +140,9 @@ This imbalance influenced model evaluation and optimization strategies.
 
 EDA revealed several behavioral patterns associated with purchasing decisions.
 
+First, the required libraries were imported;
+
+
 ## Univariate Insights
 
 - The **Revenue variable is strongly imbalanced**  
