@@ -141,7 +141,7 @@ This imbalance influenced model evaluation and optimization strategies.
 EDA revealed several behavioral patterns associated with purchasing decisions.
 
 First, the required libraries were imported;
-
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/LIBRARIES%20USED.png)
 
 ## Univariate Insights
 
