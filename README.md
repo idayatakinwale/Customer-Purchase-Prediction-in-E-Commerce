@@ -249,7 +249,7 @@ This suggests that marketing channels associated with these traffic types are ge
 
 #### Purchase Rate by Traffic Type
 
-![Purchase Rate by Traffic Type](images/purchase_rate_by_traffic_type.png)
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/purchase%20rate%20by%20traffic%20type.png)
 
 ---
 
