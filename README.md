@@ -255,6 +255,8 @@ This suggests that marketing channels associated with these traffic types are ge
 
 # Correlation Analysis
 
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/correlation%20matrix.png)
+
 The strongest predictors of purchase behavior include:
 
 | Feature | Correlation with Revenue |
