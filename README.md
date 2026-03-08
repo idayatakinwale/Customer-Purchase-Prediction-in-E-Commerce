@@ -5,6 +5,29 @@ This project demonstrates how predictive analytics can help e-commerce businesse
 
 ---
 
+# Table of Contents
+
+- [Project Overview](#project-overview)
+- [Business Problem](#business-problem)
+- [Dataset](#dataset)
+- [Key Features](#key-features)
+- [Project Workflow](#project-workflow)
+- [Data Understanding](#data-understanding)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Correlation Analysis](#correlation-analysis)
+- [Data Preprocessing](#data-preprocessing)
+- [Feature Engineering](#feature-engineering)
+- [Models Implemented](#models-implemented)
+- [Best Model: Random Forest](#best-model-random-forest)
+- [Model Optimization](#model-optimization)
+- [Marketing Optimization Analysis](#marketing-optimization-analysis)
+- [Key Behavioral Insights](#key-behavioral-insights)
+- [Business Recommendations](#business-recommendations)
+- [Tools and Technologies](#tools-and-technologies)
+- [Project Structure](#project-structure)
+- [Future Improvements](#future-improvements)
+- [Contributors](#contributors)
+
 # Project Overview
 
 Online retail platforms collect large amounts of behavioral data during user sessions. However, most businesses fail to leverage this data effectively to predict customer intent.
@@ -180,14 +203,20 @@ Purchasing sessions spend significantly more time on:
 | Other | 18.8% |
 | Returning Visitor | 13.9% |
 
-Although returning visitors convert less frequently per session, they represent the **majority of traffic**.
+Although returning visitors convert less frequently per session, they represent the **majority of overall traffic**, making them important for total revenue generation.
+
+---
 
 ### Weekend Effect
 
 - Weekend purchase rate: **17.4%**
 - Weekday purchase rate: **14.9%**
 
-### Seasonal Trends
+Sessions occurring during weekends show slightly higher purchase probabilities.
+
+---
+
+### Seasonal Trends (Month)
 
 Highest conversion months:
 
@@ -198,7 +227,24 @@ Lowest conversion month:
 
 - **February (1.63%)**
 
-This reflects strong **seasonal shopping patterns**.
+This reflects strong **seasonal shopping behavior**, particularly during major retail events toward the end of the year.
+
+---
+
+### Traffic Source Effect (TrafficType)
+
+Purchase rates vary significantly across different **TrafficType categories**, indicating that certain traffic acquisition channels are more effective at driving conversions.
+
+Examples include:
+
+- **TrafficType 16 → 33.33% purchase rate**
+- **TrafficType 7 → 30.00% purchase rate**
+
+This suggests that marketing channels associated with these traffic types are generating **higher-intent visitors**.
+
+#### Purchase Rate by Traffic Type
+
+![Purchase Rate by Traffic Type](images/purchase_rate_by_traffic_type.png)
 
 ---
 
