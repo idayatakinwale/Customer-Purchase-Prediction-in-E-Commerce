@@ -348,6 +348,7 @@ Three classification algorithms were trained and evaluated.
 
 ### Logistic Regression
 
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/LR%20CODE.png)
 
 
 
