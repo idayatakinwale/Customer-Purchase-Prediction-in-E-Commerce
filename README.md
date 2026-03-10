@@ -288,6 +288,8 @@ Several preprocessing steps were implemented to improve model performance.
 
 125 duplicate records were removed:
 
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/drop%20duplicate.png)
+
 ```
 12330 → 12205 rows
 ```
@@ -343,6 +345,11 @@ These engineered features help better represent **user engagement behavior**.
 # Models Implemented
 
 Three classification algorithms were trained and evaluated.
+
+### Logistic Regression
+
+
+
 
 | Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
 |------|------|------|------|------|------|
