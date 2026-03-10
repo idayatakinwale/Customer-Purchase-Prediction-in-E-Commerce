@@ -364,6 +364,8 @@ Three classification algorithms were trained and evaluated.
 
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/RANDOM%20FOREST%20PLOT.png)
 
+### Model Performance Summary
+
 | Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
 |------|------|------|------|------|------|
 | Random Forest | **0.885** | **0.606** | **0.764** | **0.676** | **0.929** |
@@ -372,7 +374,7 @@ Three classification algorithms were trained and evaluated.
 
 ---
 
-# Best Model: Random Forest
+### Best Model: Random Forest
 
 The **Random Forest model** achieved the strongest overall performance.
 
