@@ -112,7 +112,7 @@ Before performing any analysis, the dataset was inspected to verify its quality 
 The dataset was first examined to determine whether any columns contained missing values.
 
 
-![]()
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/null%20values.png)
 
 The results show that **no missing values were present in any of the columns**, indicating that the dataset was already complete and did not require imputation.
 
