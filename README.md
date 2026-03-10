@@ -121,7 +121,7 @@ The results show that **no missing values were present in any of the columns**, 
 Next, the dataset was checked for duplicate observations that could introduce bias into the analysis.
 
 
-![]()
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/duplicates.png)
 
 The inspection revealed **125 duplicate rows** in the dataset. These duplicates were removed to ensure that each observation represented a unique user session.
 
@@ -137,7 +137,7 @@ Additionally, an inspection of the target variable revealed a **significant clas
 - **15.47%** of sessions resulted in a purchase  
 - **84.53%** of sessions did not result in a purchase
 
-This imbalance is an important consideration when building predictive models, as it influences **model evaluation strategies and performance metrics**.
+**This imbalance is an important consideration when building predictive models, as it influences **model evaluation strategies and performance metrics**.
 ---
 
 # Exploratory Data Analysis
