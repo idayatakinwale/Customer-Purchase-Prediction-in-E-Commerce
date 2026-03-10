@@ -71,6 +71,7 @@ This project explores how user behavior metrics such as **page engagement, brows
 The dataset used in this project is the **Online Shoppers Purchasing Intention Dataset**, which was obtained from [Kaggle Dataset](https://www.kaggle.com/datasets/imakash3011/online-shoppers-purchasing-intention-dataset)
 
 The dataset contains **12,330 user sessions (Rows) and 18 behavioral features (Columns)** describing browsing activity, session attributes, and visitor characteristics.
+It was then loaded into the workbook
 
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/capstone%20dataset.png)
 
