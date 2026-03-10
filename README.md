@@ -137,7 +137,8 @@ Additionally, an inspection of the target variable revealed a **significant clas
 - **15.47%** of sessions resulted in a purchase  
 - **84.53%** of sessions did not result in a purchase
 
-**This imbalance is an important consideration when building predictive models, as it influences **model evaluation strategies and performance metrics**.
+**This imbalance is an important consideration when building predictive models, as it influences model evaluation strategies and performance metrics**.
+
 ---
 
 # Exploratory Data Analysis
