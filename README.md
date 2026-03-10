@@ -28,97 +28,77 @@ This project demonstrates how predictive analytics can help e-commerce businesse
 - [Future Improvements](#future-improvements)
 - [Contributors](#contributors)
 
-# Project Overview
+# Project Workflow
 
-Online retail platforms collect large amounts of behavioral data during user sessions. However, most businesses fail to leverage this data effectively to predict customer intent.
+The key steps followed to achieve the objective of this project are:
 
-The goal of this project is to develop a **classification model capable of predicting whether a user session will result in a purchase.**
-
-The project focuses on:
-
-- Understanding customer browsing behavior  
-- Identifying key predictors of purchase intent  
-- Building and evaluating machine learning models  
-- Translating model outputs into actionable business insights  
-
----
-
-# Business Problem
-
-E-commerce conversion rates are typically low. In this dataset:
-
-- **~15.5%** of sessions resulted in a purchase  
-- **~84.5%** of visitors did not convert  
-
-Without predictive analytics, marketing teams often allocate advertising budgets inefficiently.
-
-A predictive model allows businesses to:
-
-- Identify high-probability buyers
-- Personalize marketing strategies
-- Reduce advertising waste
-- Improve conversion rates
+1. **Understanding the Problem**
+2. **Dataset Information**
+3. **Data Cleaning and Validation**
+4. **Exploratory Data Analysis (EDA)**
+5. **Data Preprocessing**
+6. **Feature Engineering**
+7. **Model Development**
+8. **Model Evaluation**
+9. **Model Optimization**
+10. **Business Insight Generation**
 
 ---
 
-# Dataset
+# Understanding the Problem
 
-The dataset used in this project is the **Online Shoppers Purchasing Intention Dataset**.
+Online retail platforms generate large volumes of behavioral data as users browse through products, pages, and categories during their sessions. Despite the availability of this data, many businesses do not effectively leverage it to understand customer intent or predict purchasing behavior.
 
-Source:  
-https://www.kaggle.com/datasets/imakash3011/online-shoppers-purchasing-intention-dataset
+One of the major challenges in e-commerce is the **low conversion rate**, where only a small fraction of visitors actually complete a purchase. In this dataset, approximately **15.5% of user sessions resulted in a transaction**, while **about 84.5% of sessions ended without a purchase**.
 
-The dataset contains **12,330 user sessions and 18 behavioral features** describing browsing activity, session attributes, and visitor characteristics.
+Without the ability to identify which visitors are most likely to convert, marketing teams often distribute advertising budgets and promotional efforts inefficiently. This results in missed opportunities to engage high-intent customers and maximize revenue.
+
+The objective of this project is therefore to build a **machine learning classification model** that can predict whether a user session will result in a purchase based on browsing behavior and session attributes.
+
+By leveraging predictive analytics, businesses can:
+
+- Identify **high-probability buyers**
+- Personalize **marketing and promotional strategies**
+- Reduce **advertising waste**
+- Improve **conversion rates and revenue generation**
+
+This project explores how user behavior metrics such as **page engagement, browsing duration, bounce rates, and traffic sources** can be used to predict purchasing intent and support more data-driven decision-making in e-commerce environments.
+
+---
+
+# Dataset Information
+
+The dataset used in this project is the **Online Shoppers Purchasing Intention Dataset**, which was obtained from [Kaggle Dataset](https://www.kaggle.com/datasets/imakash3011/online-shoppers-purchasing-intention-dataset)
+
+The dataset contains **12,330 user sessions (Rows) and 18 behavioral features (Columns)** describing browsing activity, session attributes, and visitor characteristics.
 
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/capstone%20dataset.png)
 
----
+**Here is the Data Dictionary**;
 
-# Key Features
+The dataset contains **18 features** describing user browsing behavior during an e-commerce session.  
+These include **10 numerical variables** and **8 categorical variables**, with **Revenue** serving as the target variable.
 
-### Behavioral Metrics
-
-- Administrative pages visited  
-- Informational pages visited  
-- Product-related pages visited  
-- Bounce rates  
-- Exit rates  
-- Page values  
-
-### Session Attributes
-
-- Month  
-- Special day proximity  
-- Weekend indicator  
-
-### Visitor Characteristics
-
-- Visitor type (new vs returning)  
-- Browser  
-- Operating system  
-- Region  
-- Traffic source  
-
-### Target Variable
-
-**Revenue (True / False)**  
-Indicates whether the session resulted in a purchase.
-
----
-
-# Project Workflow
-
-The project followed a structured data science pipeline:
-
-1. Business/Data Understanding  
-2. Data Exploration (EDA)  
-3. Data Preprocessing  
-4. Feature Engineering  
-5. Model Development  
-6. Model Evaluation  
-7. Model Optimization  
-8. Business Insight Generation  
-
+| Feature | Type | Description |
+|--------|------|-------------|
+| Administrative | Numerical | Number of administrative pages visited during the session. |
+| Administrative_Duration | Numerical | Total time spent on administrative pages during the session. |
+| Informational | Numerical | Number of informational pages visited. |
+| Informational_Duration | Numerical | Total time spent on informational pages. |
+| ProductRelated | Numerical | Number of product-related pages visited. |
+| ProductRelated_Duration | Numerical | Total time spent on product-related pages. |
+| BounceRates | Numerical | Percentage of visitors who leave the site after viewing only one page. |
+| ExitRates | Numerical | Percentage of exits from a page relative to total page views. |
+| PageValues | Numerical | Average value of a page based on visits before completing a transaction. |
+| SpecialDay | Numerical | Indicates closeness of the visit to special shopping days (e.g., Valentine’s Day). |
+| Month | Categorical | Month when the session occurred. |
+| OperatingSystems | Categorical | Operating system used by the visitor. |
+| Browser | Categorical | Web browser used during the session. |
+| Region | Categorical | Geographic region of the visitor. |
+| TrafficType | Categorical | Source of the website traffic. |
+| VisitorType | Categorical | Type of visitor (Returning, New, or Other). |
+| Weekend | Categorical | Indicates whether the session occurred on a weekend. |
+| Revenue | Target | Indicates whether the session resulted in a purchase (True/False). |
 ---
 
 # Data Understanding
