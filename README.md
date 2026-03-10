@@ -431,13 +431,13 @@ A custom classification threshold was selected to **maximize the F1-Score**, imp
 
 The lift curve shows that **high-probability predictions significantly outperform random targeting**.
 
-![]()
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/lift%20curve.png)
 
 ### Cumulative Gains
 
 A key business insight emerged:
 
-![]()
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/gains%20curve.png)
 
 > **Targeting the top 20% of predicted customers captures about 65% of total conversions, representing a significant improvement over random targeting (which would capture only 20%). That is marketing optimization..**
 
