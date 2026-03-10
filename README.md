@@ -112,6 +112,7 @@ Before performing any analysis, the dataset was inspected to verify its quality 
 The dataset was first examined to determine whether any columns contained missing values.
 
 
+![]()
 
 The results show that **no missing values were present in any of the columns**, indicating that the dataset was already complete and did not require imputation.
 
@@ -119,7 +120,8 @@ The results show that **no missing values were present in any of the columns**, 
 
 Next, the dataset was checked for duplicate observations that could introduce bias into the analysis.
 
-<img src="images/duplicate_check.png" width="700">
+
+![]()
 
 The inspection revealed **125 duplicate rows** in the dataset. These duplicates were removed to ensure that each observation represented a unique user session.
 
