@@ -350,7 +350,19 @@ Three classification algorithms were trained and evaluated.
 
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/LR%20CODE.png)
 
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/LR%20PLOT.png)
 
+### Decision Tree
+
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/decision%20TREE%20CODE.png)
+
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/decision%20TREE%20PLOT.png)
+
+### Random Forest
+
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/RANDOM%20FOREST%20CODE.png)
+
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/RANDOM%20FOREST%20PLOT.png)
 
 | Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
 |------|------|------|------|------|------|
