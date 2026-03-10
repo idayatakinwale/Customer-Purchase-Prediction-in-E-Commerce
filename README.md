@@ -401,7 +401,11 @@ Several optimization techniques were applied.
 
 ### Cross Validation
 
-Confirmed the **stability and robustness** of the Random Forest model across multiple folds.
+This confirmed the **stability and robustness** of the Random Forest model across multiple folds.
+
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/cross%20validation%20code.png)
+
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/cross%20validation%20result.png)
 
 ### Hyperparameter Tuning
 
@@ -417,19 +421,25 @@ This improved predictive performance.
 
 A custom classification threshold was selected to **maximize the F1-Score**, improving balance between precision and recall.
 
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/optimized%20random%20forest.png)
+
 ---
 
-# Marketing Optimization Analysis
+## Marketing Optimization Analysis
 
 ### Lift Curve
 
 The lift curve shows that **high-probability predictions significantly outperform random targeting**.
 
+![]()
+
 ### Cumulative Gains
 
 A key business insight emerged:
 
-> **Targeting the top 20% of predicted customers captures about 65% of all purchases.**
+![]()
+
+> **Targeting the top 20% of predicted customers captures about 65% of total conversions, representing a significant improvement over random targeting (which would capture only 20%). That is marketing optimization..**
 
 This dramatically improves marketing efficiency compared with random campaigns.
 
