@@ -125,7 +125,7 @@ Next, the dataset was checked for duplicate observations that could introduce bi
 
 The inspection revealed **125 duplicate rows** in the dataset. These duplicates were removed to ensure that each observation represented a unique user session.
 
-## Dataset Status After Cleaning
+### Dataset Status After Cleaning
 
 After removing duplicate records, the dataset contained:
 
