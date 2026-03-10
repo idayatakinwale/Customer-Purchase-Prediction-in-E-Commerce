@@ -300,6 +300,8 @@ Extreme values were **capped at the 99th percentile** for:
 - Informational_Duration
 - ProductRelated_Duration
 
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/outlier%20treatment.png)
+
 This preserved valuable data while reducing the impact of extreme observations.
 
 ---
