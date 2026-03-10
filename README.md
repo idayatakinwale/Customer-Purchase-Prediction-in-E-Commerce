@@ -342,7 +342,7 @@ These engineered features help better represent **user engagement behavior**.
 
 ---
 
-# Models Implemented
+# Model Building and Evaluation
 
 Three classification algorithms were trained and evaluated.
 
@@ -372,11 +372,9 @@ Three classification algorithms were trained and evaluated.
 | Logistic Regression | 0.852 | 0.517 | **0.788** | 0.625 | 0.910 |
 | Decision Tree | 0.857 | 0.531 | 0.746 | 0.620 | 0.869 |
 
----
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/Model%20comparison.png)
 
-### Best Model: Random Forest
-
-The **Random Forest model** achieved the strongest overall performance.
+The model comparison results show that **Random Forest** performed best with an ROC-AUC of 0.93, meaning it can distinguish between purchasers and non-purchasers with 93% accuracy.
 
 ### Key Strengths
 
