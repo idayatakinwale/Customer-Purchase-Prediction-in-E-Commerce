@@ -71,9 +71,10 @@ This project explores how user behavior metrics such as **page engagement, brows
 The dataset used in this project is the **Online Shoppers Purchasing Intention Dataset**, which was obtained from [Kaggle Dataset](https://www.kaggle.com/datasets/imakash3011/online-shoppers-purchasing-intention-dataset)
 
 The dataset contains **12,330 user sessions (Rows) and 18 behavioral features (Columns)** describing browsing activity, session attributes, and visitor characteristics.
+
 It was then loaded into the workbook
 
-![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/capstone%20dataset.png)
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/loaded%20dataset.png)
 
 **Here is the Data Dictionary**;
 
@@ -102,19 +103,39 @@ These include **10 numerical variables** and **8 categorical variables**, with *
 | Revenue | Target | Indicates whether the session resulted in a purchase (True/False). |
 ---
 
-# Data Understanding
+# Data Cleaning and Validation
 
-The dataset initially contained **12,330 observations** with **18 features** describing online browsing behavior.
+Before performing any analysis, the dataset was inspected to verify its quality and ensure that it was suitable for modeling. The validation process focused on checking for missing values, identifying duplicate records, and assessing the distribution of the target variable.
 
-Key findings during initial inspection:
+**Checking for Missing Values**
 
-- **No missing values** were present.
-- **125 duplicate rows** were identified and removed.
-- Final dataset size: **12,205 observations**.
-- The target variable **Revenue is highly imbalanced**, with only **15.47% positive purchase sessions**.
+The dataset was first examined to determine whether any columns contained missing values.
 
-This imbalance influenced model evaluation and optimization strategies.
 
+
+The results show that **no missing values were present in any of the columns**, indicating that the dataset was already complete and did not require imputation.
+
+**Checking for Duplicate Records**
+
+Next, the dataset was checked for duplicate observations that could introduce bias into the analysis.
+
+<img src="images/duplicate_check.png" width="700">
+
+The inspection revealed **125 duplicate rows** in the dataset. These duplicates were removed to ensure that each observation represented a unique user session.
+
+## Dataset Status After Cleaning
+
+After removing duplicate records, the dataset contained:
+
+- **12,205 total observations**
+- **18 features describing user behavior and session attributes**
+
+Additionally, an inspection of the target variable revealed a **significant class imbalance**:
+
+- **15.47%** of sessions resulted in a purchase  
+- **84.53%** of sessions did not result in a purchase
+
+This imbalance is an important consideration when building predictive models, as it influences **model evaluation strategies and performance metrics**.
 ---
 
 # Exploratory Data Analysis
