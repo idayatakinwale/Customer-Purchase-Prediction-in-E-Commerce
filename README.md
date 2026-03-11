@@ -560,37 +560,42 @@ Possible extensions include:
 **Samuel Johnson**  
 Data Analyst | Data Science Practitioner
 
-GitHub: *(https://github.com/samsology/)*  
-LinkedIn: *(https://www.linkedin.com/in/samuel-johnson-766b2a337/)*  
+[GitHub](https://github.com/samsology/) 
+
+[LinkedIn](https://www.linkedin.com/in/samuel-johnson-766b2a337/)
 
 **Idayat Akinwale**
-
 [GitHub](https://github.com/idayatakinwale)
+
 [LinkedIn](https://www.linkedin.com/in/idayat-akinwale)
 
 **Oliver  Ocran**
-
 [GitHub](https://github.com/O-HANSON)
+
 [LinkedIn](https://www.linkedin.com/in/oliverocran)
 
 **Akinsiku Oluwadamilola**
 
 [GitHub](https://github.com/oluwadamilolaakinsiku)
+
 [LinkedIn](https://www.linkedin.com/in/akinsiku-oluwadamilola)
 
 **Daniel Ofosu Ampadu**
 
 [GitHub](https://github.com/dannieoa)
+
 [LinkedIn](https://www.linkedin.com/in/ampadudanielofosu)
 
 **Omotola Olufunmilayo**
 
 [GitHub](https://github.com/olufunmi-bit)
+
 [LinkedIn]()
 
 **Kolo Stephen**
 
 [GitHub](https://github.com/kolosteve)
+
 [LinkedIn]()
 
 **Team Dynamo**
