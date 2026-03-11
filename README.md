@@ -7,18 +7,14 @@ This project demonstrates how predictive analytics can help e-commerce businesse
 
 # Table of Contents
 
-- [Project Overview](#project-overview)
-- [Business Problem](#business-problem)
-- [Dataset](#dataset)
-- [Key Features](#key-features)
 - [Project Workflow](#project-workflow)
-- [Data Understanding](#data-understanding)
+- [Understanding the Problem](#understanding-the-problem)
+- [Dataset Information](#dataset-information)
+- [Data Cleaning and Validation](#data-cleaning-and-validation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Correlation Analysis](#correlation-analysis)
 - [Data Preprocessing](#data-preprocessing)
 - [Feature Engineering](#feature-engineering)
-- [Models Implemented](#models-implemented)
-- [Best Model: Random Forest](#best-model-random-forest)
+- [Model Building and Evaluation](#model-building-and-evaluation)
 - [Model Optimization](#model-optimization)
 - [Marketing Optimization Analysis](#marketing-optimization-analysis)
 - [Key Behavioral Insights](#key-behavioral-insights)
@@ -68,7 +64,7 @@ This project explores how user behavior metrics such as **page engagement, brows
 
 # Dataset Information
 
-The dataset used in this project is the **Online Shoppers Purchasing Intention Dataset**, which was obtained from [Kaggle Dataset](https://www.kaggle.com/datasets/imakash3011/online-shoppers-purchasing-intention-dataset)
+The dataset used in this project is the **Online Shoppers Purchasing Intention Dataset**, which was obtained from [Kaggle](https://www.kaggle.com/datasets/imakash3011/online-shoppers-purchasing-intention-dataset)
 
 The dataset contains **12,330 user sessions (Rows) and 18 behavioral features (Columns)** describing browsing activity, session attributes, and visitor characteristics.
 
@@ -259,9 +255,7 @@ This suggests that marketing channels associated with these traffic types are ge
 
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/purchase%20rate%20by%20traffic%20type.png)
 
----
-
-# Correlation Analysis
+## Correlation Analysis
 
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/correlation%20matrix.png)
 
@@ -566,8 +560,38 @@ Possible extensions include:
 **Samuel Johnson**  
 Data Analyst | Data Science Practitioner
 
-GitHub: *(add link)*  
-LinkedIn: *(add link)*  
+GitHub: *(https://github.com/samsology/)*  
+LinkedIn: *(https://www.linkedin.com/in/samuel-johnson-766b2a337/)*  
+
+**Idayat Akinwale**
+
+[GitHub](https://github.com/idayatakinwale)
+[LinkedIn](https://www.linkedin.com/in/idayat-akinwale)
+
+**Oliver  Ocran**
+
+[GitHub](https://github.com/O-HANSON)
+[LinkedIn](https://www.linkedin.com/in/oliverocran)
+
+**Akinsiku Oluwadamilola**
+
+[GitHub](https://github.com/oluwadamilolaakinsiku)
+[LinkedIn](https://www.linkedin.com/in/akinsiku-oluwadamilola)
+
+**Daniel Ofosu Ampadu**
+
+[GitHub](https://github.com/dannieoa)
+[LinkedIn](https://www.linkedin.com/in/ampadudanielofosu)
+
+**Omotola Olufunmilayo**
+
+[GitHub](https://github.com/olufunmi-bit)
+[LinkedIn]()
+
+**Kolo Stephen**
+
+[GitHub](https://github.com/kolosteve)
+[LinkedIn]()
 
 **Team Dynamo**
 
