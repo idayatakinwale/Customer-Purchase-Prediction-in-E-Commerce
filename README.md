@@ -290,7 +290,7 @@ Several preprocessing steps were implemented to improve model performance.
 
 ### Outlier Treatment
 
-Extreme values were **capped at the 99th percentile** for:
+Extreme values were **capped at the 99th percentile** for columns:
 
 - Administrative_Duration
 - Informational_Duration
@@ -298,7 +298,7 @@ Extreme values were **capped at the 99th percentile** for:
 
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/outlier%20treatment.png)
 
-This preserved valuable data while reducing the impact of extreme observations.
+This method helps to mitigate the impact of extreme values on model performance without discarding valuable data, particularly relevant for features with skewed distributions.
 
 ---
 
@@ -378,6 +378,8 @@ Indicates strong ability to distinguish buyers from non-buyers.
 **Highest F1 Score (0.68)**  
 Balances precision and recall effectively.
 
+**Overall Accuracy**: With an accuracy of 0.8853, Random Forest also outperforms the other models in correctly classifying both purchasing and non-purchasing sessions.
+
 **Balanced Precision & Recall**
 
 | Metric | Value |
@@ -387,6 +389,8 @@ Balances precision and recall effectively.
 
 This balance is ideal for marketing use cases where both **identifying buyers** and **limiting false positives** matter.
 
+In summary, the **Random Forest** model demonstrates robust performance across key metrics, making it the most suitable choice for predicting customer purchases in this scenario due to its strong ability to handle class imbalance and its superior discriminative capabilities.
+
 ---
 
 # Model Optimization
@@ -395,7 +399,7 @@ Several optimization techniques were applied.
 
 ### Cross Validation
 
-This confirmed the **stability and robustness** of the Random Forest model across multiple folds.
+This confirmed the **stability and robustness** of the Random Forest model across multiple folds, indicating that its performance is reliable and not overly sensitive to the specific train-test split.
 
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/cross%20validation%20code.png)
 
@@ -409,11 +413,12 @@ This confirmed the **stability and robustness** of the Random Forest model acros
 - max_depth
 - min_samples_split
 
-This improved predictive performance.
+This improved predictive performance, (specifically maximizing ROC-AUC) over the baseline Random Forest configuration.
+
 
 ### Threshold Optimization
 
-A custom classification threshold was selected to **maximize the F1-Score**, improving balance between precision and recall.
+A custom classification threshold was selected to **maximize the F1-Score**, improving balance between precision and recall, especially in imbalanced datasets like this where identifying the positive class (purchasers) is important. This optimization ensures that the model's predictions are aligned with a desired balance between false positives and false negatives.
 
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/optimized%20random%20forest.png)
 
@@ -423,9 +428,9 @@ A custom classification threshold was selected to **maximize the F1-Score**, imp
 
 ### Lift Curve
 
-The lift curve shows that **high-probability predictions significantly outperform random targeting**.
-
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/lift%20curve.png)
+
+The lift curve shows that **high-probability predictions significantly outperform random targeting**. For instance, the top deciles (groups of customers with the highest predicted probabilities) show a much higher conversion rate than the average conversion rate across all customers.
 
 ### Cumulative Gains
 
@@ -434,75 +439,105 @@ A key business insight emerged:
 ![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/gains%20curve.png)
 
 > **Targeting the top 20% of predicted customers captures about 65% of total conversions, representing a significant improvement over random targeting (which would capture only 20%). That is marketing optimization..**
-
 This dramatically improves marketing efficiency compared with random campaigns.
 
 ---
 
-# Key Behavioral Insights
+# Key Insights
 
-Important predictors of purchasing behavior include:
+### 1. Low Purchase Conversion Rate
+Only **15.47% of user sessions resulted in a purchase**, indicating that the majority of visitors browse without completing a transaction. This highlights the importance of identifying and targeting users with higher purchase intent.
 
-**High PageValues**
+### 2. Page Value Strongly Predicts Purchase Intent
+The **PageValues** feature showed the strongest relationship with purchases. Users who completed a purchase had significantly higher PageValues compared to non-purchasers, making it a key indicator of buying intent.
 
-Strongest signal of purchase intent.
+### 3. Higher Engagement Increases Purchase Probability
+Purchasing sessions were associated with **longer browsing durations**, particularly on **product-related pages**. This suggests that users who spend more time exploring products are more likely to convert.
 
-**Low BounceRates**
+### 4. Bounce and Exit Rates Indicate Low Conversion Potential
+Sessions with **high BounceRates and ExitRates** were less likely to result in purchases. Visitors who leave quickly or exit frequently tend to have a much lower likelihood of converting.
 
-Engaged users are more likely to convert.
+### 5. Seasonal Trends Influence Customer Purchases
+Conversion rates varied across months, with **October and November recording the highest purchase rates**, likely due to seasonal promotions and increased shopping activity during that period.
 
-**Low ExitRates**
-
-Successful purchase journeys involve deeper browsing.
-
-**Higher Engagement Time**
-
-Purchasers spend significantly more time on product pages.
-
-**Seasonality**
-
-Conversion peaks during major shopping months such as **October and November**.
+### 6. Random Forest Achieved the Best Model Performance
+Among the models tested, the **Random Forest model delivered the best performance**, achieving a **ROC-AUC score of 0.929**, indicating strong ability to distinguish between purchasing and non-purchasing sessions.
 
 ---
 
 # Business Recommendations
 
-### Strategic Customer Targeting
-
-Use predictive scoring to identify high-probability buyers and prioritize:
-
-- Personalized offers
+### 1. Implement Predictive Customer Targeting
+Use the predictive model to identify high-probability buyers and prioritize marketing efforts toward them. This can include:
+- Personalized product offers
 - Exit-intent promotions
 - Retargeting campaigns
 
-### Improve Website Engagement
+Focusing on users with higher predicted purchase probability can significantly improve marketing efficiency and ROI.
 
-Reduce bounce and exit rates by improving:
+---
 
-- Page load speed
-- Website usability
-- Product page quality
+### 2. Improve Website Engagement and User Experience
+Since purchasing sessions showed **higher engagement and lower bounce rates**, improving the website experience is essential. Businesses should focus on:
+
+- Faster page load speeds
+- Better website navigation
+- High-quality product pages
 - Mobile optimization
 
-### Seasonal Marketing Strategy
+Reducing bounce and exit rates can increase the likelihood of users progressing toward a purchase.
 
-Increase marketing investments during peak shopping months such as:
+---
 
+### 3. Optimize High-Value Pages
+The **PageValues** feature was identified as the strongest predictor of purchase intent. Businesses should identify pages that contribute most to conversion and optimize them through:
+
+- Better content and product information
+- Clear calls-to-action
+- Strategic placement within the customer journey
+
+---
+
+### 4. Leverage Seasonal Marketing Opportunities
+The analysis showed higher purchase rates during **October and November**, indicating strong seasonal demand.
+
+Businesses should increase marketing investments and promotional campaigns during peak shopping periods such as:
 - October
 - November
 - December
 
-### Visitor Segmentation
-
-- Nurture **new visitors** with targeted onboarding offers.
-- Re-engage **returning visitors** with personalized recommendations.
-
-### Continuous Model Improvement
-
-- Retrain models with new behavioral data.
-- Experiment with advanced models such as **XGBoost or LightGBM**.
+This can help maximize conversions during high-demand periods.
 
 ---
+
+### 5. Use Visitor Segmentation for Personalized Marketing
+Different visitor groups exhibit different purchasing behaviors.
+
+- **New visitors** can be encouraged with onboarding offers or first-time discounts.
+- **Returning visitors** can be re-engaged with personalized recommendations and targeted promotions.
+
+Segmenting customers allows businesses to deliver more relevant marketing experiences.
+
+---
+
+### 6. Continuously Improve the Predictive Model
+To maintain model effectiveness over time:
+
+- Retrain models with updated behavioral data
+- Monitor model performance regularly
+- Experiment with advanced algorithms such as **XGBoost** or **LightGBM**
+
+Continuous improvement ensures the model adapts to changing customer behavior.
+
+---
+
+# Conclusion
+
+This project demonstrated how behavioral data from e-commerce sessions can be leveraged to predict customer purchase intent. Through exploratory data analysis, key behavioral patterns influencing conversions were identified, including the importance of page value, user engagement duration, and bounce/exit behavior.
+
+Several machine learning models were evaluated, with the **Random Forest model achieving the best performance**, demonstrating strong ability to distinguish between purchasing and non-purchasing sessions. The results show that predictive modeling can effectively identify high-probability buyers and provide valuable insights for marketing optimization.
+
+By applying these insights, businesses can improve customer targeting, enhance website engagement, and allocate marketing resources more efficiently. Overall, the project highlights the potential of data-driven strategies to increase conversion rates and support better decision-making in online retail environments.
 
 # Tools and Technologies
 
@@ -565,11 +600,13 @@ Data Analyst | Data Science Practitioner
 [LinkedIn](https://www.linkedin.com/in/samuel-johnson-766b2a337/)
 
 **Idayat Akinwale**
+
 [GitHub](https://github.com/idayatakinwale)
 
 [LinkedIn](https://www.linkedin.com/in/idayat-akinwale)
 
 **Oliver  Ocran**
+
 [GitHub](https://github.com/O-HANSON)
 
 [LinkedIn](https://www.linkedin.com/in/oliverocran)
@@ -590,13 +627,19 @@ Data Analyst | Data Science Practitioner
 
 [GitHub](https://github.com/olufunmi-bit)
 
-[LinkedIn]()
+[LinkedIn](https://www.linkedin.com/in/olufunmi-omotola)
 
 **Kolo Stephen**
 
 [GitHub](https://github.com/kolosteve)
 
-[LinkedIn]()
+[LinkedIn](http://www.linkedin.com/in/kolo-stephen-641a792a3)
+
+**Adekunle Mahmud**
+
+[GitHub](https://github.com/adekunlemahmud)
+
+[LinkedIn](https://www.linkedin.com/in/mahmud-adekunle-0649a7198/)
 
 **Team Dynamo**
 
