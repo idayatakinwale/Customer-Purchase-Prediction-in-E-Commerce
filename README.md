@@ -24,6 +24,8 @@ This project demonstrates how predictive analytics can help e-commerce businesse
 - [Future Improvements](#future-improvements)
 - [Contributors](#contributors)
 
+---
+
 # Project Workflow
 
 The key steps followed to achieve the objective of this project are:
@@ -97,6 +99,7 @@ These include **10 numerical variables** and **8 categorical variables**, with *
 | VisitorType | Categorical | Type of visitor (Returning, New, or Other). |
 | Weekend | Categorical | Indicates whether the session occurred on a weekend. |
 | Revenue | Target | Indicates whether the session resulted in a purchase (True/False). |
+
 ---
 
 # Data Cleaning and Validation
@@ -168,7 +171,6 @@ Example:
 | PageValues | 22.14% |
 | Informational | 21.34% |
 
----
 
 ## Bivariate Insights
 
@@ -200,7 +202,6 @@ Purchasing sessions spend significantly more time on:
 - Informational pages
 - Administrative pages
 
----
 
 ## Categorical Insights
 
@@ -214,7 +215,6 @@ Purchasing sessions spend significantly more time on:
 
 Although returning visitors convert less frequently per session, they represent the **majority of overall traffic**, making them important for total revenue generation.
 
----
 
 ### Weekend Effect
 
@@ -223,7 +223,6 @@ Although returning visitors convert less frequently per session, they represent 
 
 Sessions occurring during weekends show slightly higher purchase probabilities.
 
----
 
 ### Seasonal Trends (Month)
 
@@ -238,7 +237,6 @@ Lowest conversion month:
 
 This reflects strong **seasonal shopping behavior**, particularly during major retail events toward the end of the year.
 
----
 
 ### Traffic Source Effect (TrafficType)
 
@@ -539,6 +537,8 @@ Several machine learning models were evaluated, with the **Random Forest model a
 
 By applying these insights, businesses can improve customer targeting, enhance website engagement, and allocate marketing resources more efficiently. Overall, the project highlights the potential of data-driven strategies to increase conversion rates and support better decision-making in online retail environments.
 
+---
+
 # Tools and Technologies
 
 ### Programming Language
@@ -640,6 +640,7 @@ Data Analyst | Data Science Practitioner
 [GitHub](https://github.com/adekunlemahmud)
 
 [LinkedIn](https://www.linkedin.com/in/mahmud-adekunle-0649a7198/)
+
 
 **Team Dynamo**
 
