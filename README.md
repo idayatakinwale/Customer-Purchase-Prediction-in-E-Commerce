@@ -3,6 +3,8 @@ This is a machine learning project that predicts whether an online shopper will 
 
 This project demonstrates how predictive analytics can help e-commerce businesses identify high-intent visitors, improve marketing efficiency, and optimize revenue generation.
 
+![](https://github.com/idayatakinwale/Customer-Purchase-Prediction-in-E-Commerce/blob/main/images/project%20image.png)
+
 ---
 
 # Table of Contents
